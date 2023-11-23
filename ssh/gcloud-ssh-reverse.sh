@@ -1,4 +1,5 @@
 gcloud compute config-ssh --remove
 gcloud compute config-ssh
-sed -i 's/ubuntu-dev-vm.europe-west1-b.third-harbor-389121/googledev/g' ~/.ssh/config
-gcloud compute ssh --zone "europe-west1-b" "ubuntu-dev-vm" --project "third-harbor-389121" -- -R 2000:localhost:2000
+sed -i 's/instance-1.europe-west1-b.noted-field-398807/googledev/g' ~/.ssh/config
+gcloud compute ssh --zone "europe-west1-b" "instance-1" --project "noted-field-398807" -- -R 2000:localhost:2000
+
